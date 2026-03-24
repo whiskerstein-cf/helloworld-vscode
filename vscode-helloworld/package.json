@@ -1,0 +1,42 @@
+{
+  "name": "vscode-helloworld",
+  "displayName": "VSCode HelloWorld",
+  "description": "Automatically generates Hello World code when you create helloworld.py or helloworld.java files.",
+  "version": "0.1.0",
+  "publisher": "whiskerstein",
+  "license": "MIT",
+  "keywords": [
+    "hello world",
+    "python",
+    "java",
+    "template",
+    "boilerplate"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whiskerstein-cf/helloworld-vscode.git"
+  },
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.110.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.39.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
